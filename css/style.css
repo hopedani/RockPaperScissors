@@ -1,0 +1,89 @@
+/*
+Name:  Daniel Hope
+Assignment:  Assignment 3
+Date:  Feb. 13, 2017
+
+Page Description: This is the main CSS file for the application and defines
+all the styles required for the game.
+Files: index.html - the main page with the Rock, Paper, Scissors playing area
+       script.js - source for all functionality of the application
+*/
+
+/* Initial styles for the elements on the page */
+body {
+    font: 16px Arial, sans-serif;
+}
+
+h1 {
+    font-size: 1.5em;
+    border-top: 2px solid darkgreen;
+    border-bottom: 2px solid darkgreen;
+}
+
+table {
+    border: 0px;
+    border-collapse: collapse;
+    margin: 2px 2px 10px 15px;
+}
+
+/* for some of the game headers make changes to the initial styles */
+.game-header {
+    font-size: 1.2em;
+    font-weight: bold;
+    margin: 15px 5px;
+}
+
+/* Images are given borders, the .no-img-border matches the background colour
+    so shifting does not occur when a border is added or removed */
+.img-border {
+    border: 2px solid red;
+}
+
+.no-img-border {
+    border: 2px solid white;
+}
+
+/* displays images in a row and strips the padding and margins from the divs */
+.rps-img {
+    display: inline-block;
+    height: 117px;
+    margin: 0px;
+    padding: 0px;
+    width: 117px;
+}
+
+/* centers the contents of the container vertically */
+.vert-center {
+    vertical-align: middle;
+}
+
+/* style for the display area beside the computer score element */
+#output {
+    color: blue;
+    font-size: 1.5em;
+    font-weight: bold;
+    display: inline-block;
+    margin-left: 10px;
+}
+
+/* score box styling */
+#score {
+    border: 1px dashed darkgreen;
+    background-color: lavender;
+    padding: 10px;
+    width: 50%;
+}
+
+#score div {
+    font-weight: bold;
+}
+
+/* styles for footer, puts footer in a box */
+footer {
+    border: 2px solid darkgreen;
+    border-radius: 5px;
+    font-weight: bold;
+    margin: 10px auto;
+    padding: 10px;
+    width: 75%;
+}
